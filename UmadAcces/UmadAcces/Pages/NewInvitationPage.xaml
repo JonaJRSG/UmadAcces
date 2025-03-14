@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmadAcces.Pages.NewInvitationPage"
+             Title="Nueva Invitación">
+    <VerticalStackLayout>
+        <StackLayout
+            Padding="20"
+            Spacing="20"
+            >
+            <Label 
+                Text="Información" 
+                HorizontalOptions="Center"
+                FontSize="40"
+                FontFamily="Montserrat"
+                />
+
+            <Entry Placeholder="Nombre"/>
+            <Entry Placeholder="Apellido paterno"/>
+            <Entry Placeholder="Apellido materno"/>
+            <Entry Placeholder="Telefono"/>
+
+            <Button Text="Crear" WidthRequest="150" BackgroundColor="{DynamicResource Tertiary}"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

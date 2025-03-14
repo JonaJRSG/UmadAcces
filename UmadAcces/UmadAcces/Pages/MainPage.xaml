@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmadAcces.Pages.MainPage"
+             Title="Credenciales">
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, *"
+          ColumnDefinitions="*,*"
+          Padding="20">
+
+        <!-- Cinta roja con el nombre -->
+        <Grid Row="0" ColumnSpan="2" BackgroundColor="{DynamicResource Secondary}" Padding="10">
+            <Label Text="Adriana Serna Galina"
+                   TextColor="White"
+                   FontSize="18"
+                   HorizontalOptions="Center" />
+        </Grid>
+
+        <!-- Foto de perfil y logo en Stack Horizontal -->
+        <HorizontalStackLayout Grid.Row="1"
+                               Spacing="10"
+                               HorizontalOptions="Center">
+            <Image Source="user_img.png"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"
+                   Clip="Circle"/>
+            <Image Source="umad.png"
+                   WidthRequest="50"
+                   HeightRequest="50"/>
+        </HorizontalStackLayout>
+
+        <!-- ID y Carrera -->
+        <Grid Row="2" ColumnSpan="2" RowDefinitions="Auto,Auto">
+            <Label Text="20074902"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Label Grid.Row="1"
+                   Text="Ingeniería Software"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- Botones tipo y vigencia -->
+        <Grid Row="3" ColumnSpan="2" ColumnDefinitions="*,*" Margin="20">
+            <Grid Grid.Column="0"
+                   Padding="10"
+                   BackgroundColor="{DynamicResource Secondary}"
+                   HorizontalOptions="FillAndExpand">
+                <Label Text="Semestral" TextColor="White" HorizontalOptions="Center" />
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Label Text="Vigencia" HorizontalOptions="Center" />
+                <Label Text="21/06/2025"
+                       BackgroundColor="{DynamicResource Secondary}"
+                       TextColor="White"
+                       Padding="5"
+                       HorizontalOptions="Center" />
+            </Grid>
+        </Grid>
+
+        <Grid Row="4" ColumnSpan="2" ColumnDefinitions="*,*">
+            <Grid Grid.Column="0">
+                <!-- Código QR centrado -->
+                <Image Grid.Row="4"
+                   Source="qrcode.png"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <!-- Rol en la parte inferior -->
+                <Label Grid.Row="5"
+                   Text="Estudiante"
+                   FontSize="20"
+                   BackgroundColor="{DynamicResource Secondary}"
+                   TextColor="White"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalTextAlignment="Center"
+                   Padding="5"
+                   HorizontalTextAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</ContentPage>

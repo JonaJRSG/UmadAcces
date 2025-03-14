@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UmadAcces.Pages.InvitationPage"
+             Title="Invitaciones">
+    <Grid>
+        <!-- Contenido principal -->
+        <VerticalStackLayout Padding="20">
+            <SwipeView Margin="0, 20">
+                <SwipeView.LeftItems>
+                    <SwipeItem Text="Eliminar" BackgroundColor="{DynamicResource Secondary}" />
+                </SwipeView.LeftItems>
+                <SwipeView.RightItems>
+                    <SwipeItem Text="Editar" BackgroundColor="#2266a6" />
+                </SwipeView.RightItems>
+                <StackLayout>
+                    <Label 
+                        Text="Jonathan Serna"
+                        BackgroundColor="{DynamicResource Primary}"
+                        Padding="20"
+                        />
+                </StackLayout>
+            </SwipeView>
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItem Text="Eliminar" BackgroundColor="{DynamicResource Secondary}" />
+                </SwipeView.LeftItems>
+                <SwipeView.RightItems>
+                    <SwipeItem Text="Editar" BackgroundColor="#2266a6" />
+                </SwipeView.RightItems>
+                <StackLayout>
+                    <Label 
+                        Text="Emilio Sotomayor"
+                        BackgroundColor="{DynamicResource Primary}"
+                        Padding="20"
+                        />
+                </StackLayout>
+            </SwipeView>
+            <SwipeView Margin="0, 20">
+                <SwipeView.LeftItems>
+                    <SwipeItem Text="Eliminar" BackgroundColor="{DynamicResource Secondary}" />
+                </SwipeView.LeftItems>
+                <SwipeView.RightItems>
+                    <SwipeItem Text="Editar" BackgroundColor="#2266a6" />
+                </SwipeView.RightItems>
+                <StackLayout>
+                    <Label 
+                        Text="Yari Nahomi"
+                        BackgroundColor="{DynamicResource Primary}"
+                        Padding="20"
+                        />
+                </StackLayout>
+            </SwipeView>
+        </VerticalStackLayout>
+
+        <!-- Botón flotante en la esquina inferior derecha -->
+        <Button Text="+"
+                BackgroundColor="{DynamicResource Secondary}"
+                TextColor="White"
+                FontSize="24"
+                WidthRequest="60"
+                HeightRequest="60"
+                CornerRadius="30"
+                Padding="0"
+                FontAttributes="Bold"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Clicked="newInvitation"
+                Margin="20"
+                />
+    </Grid>
+</ContentPage>

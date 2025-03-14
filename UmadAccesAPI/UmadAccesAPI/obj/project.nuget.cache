@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jPMsPS/7wd0=",
+  "success": true,
+  "projectFilePath": "E:\\Universidad\\Estandares de calidad\\UmadAccesAPI\\UmadAccesAPI\\UmadAccesAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonat\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\jonat\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

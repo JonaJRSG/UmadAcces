@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UmadAcces.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:UmadAcces.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="UmadAcces">
+
+    <!-- Header -->
+    <Shell.FlyoutHeader>
+        <Label
+            Text="UmadAcces"
+            Padding="20"
+            HorizontalOptions="Center"
+            FontSize="24"
+            />
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Inicio">
+        <ShellContent
+            Title="Inicio"
+            ContentTemplate="{DataTemplate pages:MainPage}"
+            Route="MainPage" 
+            />
+
+        <ShellContent
+            Title="Invitaciones"
+            ContentTemplate="{DataTemplate pages:InvitationPage}"
+            Route="InvitationPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ajustes">
+        <ShellContent
+        Title="Ajustes"
+        ContentTemplate="{DataTemplate pages:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Solicitudes">
+        <ShellContent
+            Title="Solicitudes"
+            ContentTemplate="{DataTemplate pages:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <!-- Header -->
+    <Shell.FlyoutFooter>
+        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="80,*" Padding="10">
+            <!-- Primer botón centrado -->
+            <Button Text="Ajustes" Grid.Row="0" Grid.Column="0" Padding="10" WidthRequest="80" Background="{DynamicResource Tertiary}"/>
+
+            <!-- Segundo botón centrado -->
+            <Button Text="Cerrar Sersión" Grid.Row="0" Grid.Column="1" Padding="10" WidthRequest="200" Background="{DynamicResource Tertiary}"/>
+        </Grid>
+    </Shell.FlyoutFooter>
+
+</Shell>
